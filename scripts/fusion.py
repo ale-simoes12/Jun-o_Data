@@ -1,4 +1,5 @@
 
+from Dados import Dados
 import json
 import csv
 
@@ -48,9 +49,6 @@ def rename_columns(dados, key_mapping):
             
     return new_dados_csv
 
-
-
-
 def join(dadosA, dadosB):
     combined_list = []
     combined_list.extend(dadosA)
@@ -96,6 +94,7 @@ dados_tabela = transformando_dados_tabela(join_listas,get_columns(novos_dados_cs
 print(dados_tabela[1])
 path_dados_combinados = 'data_processed/dados_combinados2.csv'
 salvando_dados(dados_tabela,path_dados_combinados)
+
 
 
 
